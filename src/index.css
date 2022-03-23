@@ -1,13 +1,147 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+}
+
+main {
+  padding: 36px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #2e2e2e 1.18%, #979199 100%);
+  color: white;
+  padding: 20px;
+}
+
+.header--image {
+  height: 100vh;
+  margin-right: 6px;
+}
+
+.header--title {
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.header--project {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+
+.form--button {
+  
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #979199 1.14%, #2e2e2e 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.drag--text--placement {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+}
+
+.meme--text {
+  
+  width: 80%;
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  
+  cursor: pointer;
+  color: rgb(245, 241, 241);
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+@media (min-width: 1100px) {
+  .meme {
+    position: relative;
+    width: 90vw;
+    text-align: center;
+  }
+
+  .meme--text {
+    font-size: 200%;
+  }
+  
+  .form {
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+    margin-bottom: 17px;
+  }
+  .meme--image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80vw;
+  }
+
+  .meme--text {
+    font-size: 200%;
+  }
+
+  .form--button {
+    margin: 15px;
+  }
+
+  .meme {
+    width: 90vw;
+    display: block;
+    border-radius: 1px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .meme--image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
 }
