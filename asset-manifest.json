@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/meme-generator-2022/static/css/main.28f322f8.css",
+    "main.js": "/meme-generator-2022/static/js/main.681d6a7f.js",
+    "static/js/787.876f76cf.chunk.js": "/meme-generator-2022/static/js/787.876f76cf.chunk.js",
+    "index.html": "/meme-generator-2022/index.html",
+    "main.28f322f8.css.map": "/meme-generator-2022/static/css/main.28f322f8.css.map",
+    "main.681d6a7f.js.map": "/meme-generator-2022/static/js/main.681d6a7f.js.map",
+    "787.876f76cf.chunk.js.map": "/meme-generator-2022/static/js/787.876f76cf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28f322f8.css",
+    "static/js/main.681d6a7f.js"
+  ]
+}
